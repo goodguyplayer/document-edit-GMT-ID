@@ -14,12 +14,9 @@ function onRun(){
         console.log(row.cells[cellEnum.ID]);
 
         if (row.cells[cellEnum.ARTIFACT_TYPE].innerText === "Requirement"){
-            row.cells[1].innerHTML = "Test";
-            gmtBuilder();
-            console.log(row.cells[cellEnum.ID].innerHTML);
-            
+            row.cells[1].innerHTML = gmtBuilder(row.cells[cellEnum.ID].innerHTML);
+            // console.log(gmtBuilder(row.cells[cellEnum.ID].innerHTML));
         }
-
      }
 }
 
@@ -28,6 +25,10 @@ function gmtBuilder(cellId){
     getDocumentType(table.rows[0].cells);
     getLevel(table.rows[1].cells);
     getComponent(table.rows[1].cells);
+    return getDocumentType(table.rows[0].cells) + "-" +
+            getLevel(table.rows[1].cells) + "-" +
+            getComponent(table.rows[1].cells) + "-" +
+            cellId;
 }
 
 function getDocumentType(cell){
