@@ -1,0 +1,123 @@
+:root{
+    --gmt_blue: #004181;
+    --light_blue: #a9c1d9;
+    --light_grey: #f2f2f2;
+    --medium_grey: #d9d9d9;
+    --dark_grey: #a0a0a0;
+    --line_grey: #7f7f7f;
+}
+
+
+
+
+body {
+    /* background-image: url("../midia/gmt_logo_text.jpg"); */
+    background-color: #505050;
+}
+
+h2 {
+    color: white;
+}
+
+
+
+
+.module_info_table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: thin solid black;
+}
+
+.module_info_table thead tr {
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--medium_grey);
+}
+
+.module_info_table tbody tr {
+    background-color: var(--light_grey);
+}
+
+.module_info.key {
+    font-weight: bold;
+    text-align: right;
+}
+
+.module_info.value {
+    text-align: left;
+}
+
+
+
+
+.module_table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.module_table thead tr {
+    background-color: var(--gmt_blue);
+    color: white;
+    text-align: left;
+}
+
+.module_table th,
+.module_table td {
+    padding: 12px 15px;
+}
+
+.module_table tbody tr {
+    border-bottom: thin solid var(--line_grey);
+}
+
+.module_table tbody tr:nth-of-type(even) {
+    background-color: var(--light_grey);
+}
+
+.module_table tbody tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+.module_table tbody tr:last-of-type {
+    border-bottom: medium solid var(--gmt_blue);
+}
+
+.module_table tbody tr:hover {
+    color: white;
+    background-color: var(--dark_grey);
+}
+
+
+
+
+.button {
+	background-color: var(--gmt_blue);
+	border-radius: 28px;
+	border: thin solid white;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+	text-shadow: 0px thin 0px #2f6627;
+}
+.button:hover {
+	background-color: var(--light_blue);
+    border-radius: 28px;
+	border: thin solid var(--gmt_blue);
+    color: var(--gmt_blue);
+}
+.button:active {
+	position: relative;
+	top: thin;
+}

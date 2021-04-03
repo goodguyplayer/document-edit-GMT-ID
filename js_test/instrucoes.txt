@@ -1,0 +1,16 @@
+Você foi solicitado para editar um documento da equipe de Acquisition and Guidance Wavelength System. Você precisa gerar o identificador "GMT ID" dos requisitos de sistema ("Requirement") e atualizar a segunda tabela. A tabela a ser editada possui dois tipos de artefatos: "Information" e "Requirement". Cada linha da segunda tabela é um artefato. Apenas os artefatos do tipo "Requirement" devem receber "GMT ID". O campo de "GMT ID" dos artefatos tipo "Information" devem sempre permanecerem vazios! Para atualizar a segunda tabela com os "GMT IDs" que você gerar, é obrigatório que seu programa use o botão "RUN", que já consta no HTML. Ou seja, a página não pode sofrer nenhuma alteração enquanto o usuário não clicar no botão. Apenas após apertar o botão, a tabela deve ser atualizada.
+
+O "GMT ID" é um conjunto de 4 informações, separadas por hífen "-", disponíveis nas duas tabelas fornecidas. As 4 informações são:
+    1 - Tipo do documento: Se o título do documento começar com "REQ", usar "REQ". Se for "ICD", utilizar "ICD". O título do documento é o header da primeira tabela, em negrito;
+    2 e 3 - Nível e componente: consultar a linha "Prefix" da primeira tabela. O componente e o nível aparecem nessa ordem e são separados por uma barra "/";
+    4 - ID: essa informação é a única exclusiva de cada artefato e consta na segunda tabela (tabela do documento). Cada artefato possui um ID único e esse número deve ser usado para completar o GMT ID.
+
+Exemplos de GMT ID:
+    - [TIPO]-[NIVEL]-[COMPONENTE]-[ID]
+    - ICD-L4-MNT-54083
+    - REQ-L2-AGWS-100632
+    - REQ-L3-SECore-45322
+
+Para o desenvolvimento do código, é necessário que você faça controle de versão, utilizando o GitHub. Estruture o seu repositório da forma que achar melhor. Para enviar sua resposta, envie para o email que você recebeu esse teste, apenas o link do seu repositório. Não esqueça de deixar seu repositório público!
+
+Resumindo, você deve gerar os "GMT IDs" dos artefatos tipo "Requirement" da segunda tabela, porém, apenas após clicar no botão "RUN". Para tanto, você deve utilizar seus conhecimentos em JavaScript (obrigatório), HTML, manipulação de DOMs e Git para fazer as manipulações necessárias. Fique a vontade para editar o HTML e o CSS desse projeto.
