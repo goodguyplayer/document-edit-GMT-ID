@@ -15,9 +15,30 @@ function onRun(){
 
         if (row.cells[cellEnum.ARTIFACT_TYPE].innerText === "Requirement"){
             row.cells[1].innerHTML = "Test";
+            gmtBuilder();
             
         }
 
      }
 }
 
+function gmtBuilder(){
+    var table = document.getElementById("gmtsource");
+    // getDocumentType(table.rows[0].cells);
+}
+
+function getDocumentType(cell){
+    console.log(cell);
+}
+
+function getLevel(cell){
+    console.log(cell);
+}
+
+function getComponent(cell){
+    console.log(cell);
+}
+
+function getID(cell){
+    console.log(cell);
+}
