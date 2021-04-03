@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.3] - 2021-04-03
+### Added
+- getters in main.js
+- function gmtBuilder in main.js
+- tableEnum in main.js
+
+### Changed
+- function onRun in main.js, updated to have workable data.
+
 ## [0.0.2] - 2021-04-03
 ### Added
 - Script main.js
