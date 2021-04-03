@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.2] - 2021-04-03
+### Added
+- Script main.js
+- enumCells in main.js
+- function onRun
+
+### Changed
+- Added id to both tables in index.html
+- Added script main.js to index.html
+
 ## [0.0.1] - 2021-04-03
 ### Added
 - Required js_test
